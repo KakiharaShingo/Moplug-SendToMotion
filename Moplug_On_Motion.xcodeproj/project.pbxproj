@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		28D476B82EDCA19C00114B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4769E2EDCA19A00114B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D476A52EDCA19A00114B54;
+			remoteInfo = Moplug_On_Motion;
+		};
+		28D476C22EDCA19C00114B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4769E2EDCA19A00114B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D476A52EDCA19A00114B54;
+			remoteInfo = Moplug_On_Motion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moplug_On_Motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		28D476A82EDCA19A00114B54 /* Moplug_On_Motion */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Moplug_On_Motion;
+			sourceTree = "<group>";
+		};
+		28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Moplug_On_MotionTests;
+			sourceTree = "<group>";
+		};
+		28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Moplug_On_MotionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28D476A32EDCA19A00114B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476B42EDCA19C00114B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476BE2EDCA19C00114B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28D4769D2EDCA19A00114B54 = {
+			isa = PBXGroup;
+			children = (
+				28D476A82EDCA19A00114B54 /* Moplug_On_Motion */,
+				28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */,
+				28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+				28D476A72EDCA19A00114B54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28D476A72EDCA19A00114B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */,
+				28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */,
+				28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28D476A52EDCA19A00114B54 /* Moplug_On_Motion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_Motion" */;
+			buildPhases = (
+				28D476A22EDCA19A00114B54 /* Sources */,
+				28D476A32EDCA19A00114B54 /* Frameworks */,
+				28D476A42EDCA19A00114B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				28D476A82EDCA19A00114B54 /* Moplug_On_Motion */,
+			);
+			name = Moplug_On_Motion;
+			packageProductDependencies = (
+			);
+			productName = Moplug_On_Motion;
+			productReference = 28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28D476B62EDCA19C00114B54 /* Moplug_On_MotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionTests" */;
+			buildPhases = (
+				28D476B32EDCA19C00114B54 /* Sources */,
+				28D476B42EDCA19C00114B54 /* Frameworks */,
+				28D476B52EDCA19C00114B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D476B92EDCA19C00114B54 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */,
+			);
+			name = Moplug_On_MotionTests;
+			packageProductDependencies = (
+			);
+			productName = Moplug_On_MotionTests;
+			productReference = 28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28D476C02EDCA19C00114B54 /* Moplug_On_MotionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionUITests" */;
+			buildPhases = (
+				28D476BD2EDCA19C00114B54 /* Sources */,
+				28D476BE2EDCA19C00114B54 /* Frameworks */,
+				28D476BF2EDCA19C00114B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D476C32EDCA19C00114B54 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+			);
+			name = Moplug_On_MotionUITests;
+			packageProductDependencies = (
+			);
+			productName = Moplug_On_MotionUITests;
+			productReference = 28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D4769E2EDCA19A00114B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					28D476A52EDCA19A00114B54 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					28D476B62EDCA19C00114B54 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 28D476A52EDCA19A00114B54;
+					};
+					28D476C02EDCA19C00114B54 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 28D476A52EDCA19A00114B54;
+					};
+				};
+			};
+			buildConfigurationList = 28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_On_Motion" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28D4769D2EDCA19A00114B54;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 28D476A72EDCA19A00114B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28D476A52EDCA19A00114B54 /* Moplug_On_Motion */,
+				28D476B62EDCA19C00114B54 /* Moplug_On_MotionTests */,
+				28D476C02EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28D476A42EDCA19A00114B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476B52EDCA19C00114B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476BF2EDCA19C00114B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28D476A22EDCA19A00114B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476B32EDCA19C00114B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D476BD2EDCA19C00114B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28D476B92EDCA19C00114B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D476A52EDCA19A00114B54 /* Moplug_On_Motion */;
+			targetProxy = 28D476B82EDCA19C00114B54 /* PBXContainerItemProxy */;
+		};
+		28D476C32EDCA19C00114B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D476A52EDCA19A00114B54 /* Moplug_On_Motion */;
+			targetProxy = 28D476C22EDCA19C00114B54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28D476C92EDCA19C00114B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28D476CA2EDCA19C00114B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		28D476CC2EDCA19C00114B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moplug_On_Motion/Moplug_On_Motion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-Motion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28D476CD2EDCA19C00114B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moplug_On_Motion/Moplug_On_Motion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-Motion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		28D476CF2EDCA19C00114B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-MotionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug_On_Motion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug_On_Motion";
+			};
+			name = Debug;
+		};
+		28D476D02EDCA19C00114B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-MotionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug_On_Motion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug_On_Motion";
+			};
+			name = Release;
+		};
+		28D476D22EDCA19C00114B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-MotionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Moplug_On_Motion;
+			};
+			name = Debug;
+		};
+		28D476D32EDCA19C00114B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V47R62H7V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moplug.Moplug-On-MotionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Moplug_On_Motion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_On_Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D476C92EDCA19C00114B54 /* Debug */,
+				28D476CA2EDCA19C00114B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D476CC2EDCA19C00114B54 /* Debug */,
+				28D476CD2EDCA19C00114B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D476CF2EDCA19C00114B54 /* Debug */,
+				28D476D02EDCA19C00114B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D476D22EDCA19C00114B54 /* Debug */,
+				28D476D32EDCA19C00114B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28D4769E2EDCA19A00114B54 /* Project object */;
+}
