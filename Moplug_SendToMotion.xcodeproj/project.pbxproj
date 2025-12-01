@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C134E87619396C0890434926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9670C27DD6AEF66B681436B9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		28D476B82EDCA19C00114B54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +31,29 @@
 		28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moplug_On_Motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9670C27DD6AEF66B681436B9 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Moplug_SendToMotion/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		28D476A82EDCA19A00114B54 /* Moplug_On_Motion */ = {
+		28D476A82EDCA19A00114B54 /* Moplug_SendToMotion */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Moplug_On_Motion;
+			exceptions = (
+			);
+			path = Moplug_SendToMotion;
 			sourceTree = "<group>";
 		};
-		28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */ = {
+		28D476BA2EDCA19C00114B54 /* Moplug_SendToMotionTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Moplug_On_MotionTests;
+			exceptions = (
+			);
+			path = Moplug_SendToMotionTests;
 			sourceTree = "<group>";
 		};
-		28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */ = {
+		28D476C42EDCA19C00114B54 /* Moplug_SendToMotionUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Moplug_On_MotionUITests;
+			exceptions = (
+			);
+			path = Moplug_SendToMotionUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +86,11 @@
 		28D4769D2EDCA19A00114B54 = {
 			isa = PBXGroup;
 			children = (
-				28D476A82EDCA19A00114B54 /* Moplug_On_Motion */,
-				28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */,
-				28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+				28D476A82EDCA19A00114B54 /* Moplug_SendToMotion */,
+				28D476BA2EDCA19C00114B54 /* Moplug_SendToMotionTests */,
+				28D476C42EDCA19C00114B54 /* Moplug_SendToMotionUITests */,
 				28D476A72EDCA19A00114B54 /* Products */,
+				9670C27DD6AEF66B681436B9 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28D476A52EDCA19A00114B54 /* Moplug_On_Motion */ = {
+		28D476A52EDCA19A00114B54 /* Moplug SendToMotion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_Motion" */;
+			buildConfigurationList = 28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotion" */;
 			buildPhases = (
 				28D476A22EDCA19A00114B54 /* Sources */,
 				28D476A32EDCA19A00114B54 /* Frameworks */,
@@ -108,18 +120,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				28D476A82EDCA19A00114B54 /* Moplug_On_Motion */,
+				28D476A82EDCA19A00114B54 /* Moplug_SendToMotion */,
 			);
-			name = Moplug_On_Motion;
-			packageProductDependencies = (
-			);
-			productName = Moplug_On_Motion;
+			name = "Moplug SendToMotion";
+			productName = "Moplug SendToMotion";
 			productReference = 28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28D476B62EDCA19C00114B54 /* Moplug_On_MotionTests */ = {
+		28D476B62EDCA19C00114B54 /* Moplug SendToMotionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionTests" */;
+			buildConfigurationList = 28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotionTests" */;
 			buildPhases = (
 				28D476B32EDCA19C00114B54 /* Sources */,
 				28D476B42EDCA19C00114B54 /* Frameworks */,
@@ -131,18 +141,16 @@
 				28D476B92EDCA19C00114B54 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				28D476BA2EDCA19C00114B54 /* Moplug_On_MotionTests */,
+				28D476BA2EDCA19C00114B54 /* Moplug_SendToMotionTests */,
 			);
-			name = Moplug_On_MotionTests;
-			packageProductDependencies = (
-			);
-			productName = Moplug_On_MotionTests;
+			name = "Moplug SendToMotionTests";
+			productName = "Moplug SendToMotionTests";
 			productReference = 28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28D476C02EDCA19C00114B54 /* Moplug_On_MotionUITests */ = {
+		28D476C02EDCA19C00114B54 /* Moplug SendToMotionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionUITests" */;
+			buildConfigurationList = 28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotionUITests" */;
 			buildPhases = (
 				28D476BD2EDCA19C00114B54 /* Sources */,
 				28D476BE2EDCA19C00114B54 /* Frameworks */,
@@ -154,12 +162,10 @@
 				28D476C32EDCA19C00114B54 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				28D476C42EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+				28D476C42EDCA19C00114B54 /* Moplug_SendToMotionUITests */,
 			);
-			name = Moplug_On_MotionUITests;
-			packageProductDependencies = (
-			);
-			productName = Moplug_On_MotionUITests;
+			name = "Moplug SendToMotionUITests";
+			productName = "Moplug SendToMotionUITests";
 			productReference = 28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -186,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_On_Motion" */;
+			buildConfigurationList = 28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_SendToMotion" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +206,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28D476A52EDCA19A00114B54 /* Moplug_On_Motion */,
-				28D476B62EDCA19C00114B54 /* Moplug_On_MotionTests */,
-				28D476C02EDCA19C00114B54 /* Moplug_On_MotionUITests */,
+				28D476A52EDCA19A00114B54 /* Moplug SendToMotion */,
+				28D476B62EDCA19C00114B54 /* Moplug SendToMotionTests */,
+				28D476C02EDCA19C00114B54 /* Moplug SendToMotionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C134E87619396C0890434926 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +265,12 @@
 /* Begin PBXTargetDependency section */
 		28D476B92EDCA19C00114B54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28D476A52EDCA19A00114B54 /* Moplug_On_Motion */;
+			target = 28D476A52EDCA19A00114B54 /* Moplug SendToMotion */;
 			targetProxy = 28D476B82EDCA19C00114B54 /* PBXContainerItemProxy */;
 		};
 		28D476C32EDCA19C00114B54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28D476A52EDCA19A00114B54 /* Moplug_On_Motion */;
+			target = 28D476A52EDCA19A00114B54 /* Moplug SendToMotion */;
 			targetProxy = 28D476C22EDCA19C00114B54 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Moplug_On_Motion/Moplug_On_Motion.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Moplug_SendToMotion/Moplug_On_Motion.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -422,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Moplug_On_Motion/Moplug_On_Motion.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Moplug_SendToMotion/Moplug_On_Motion.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -459,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug_On_Motion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug_On_Motion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug SendToMotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug SendToMotion";
 			};
 			name = Debug;
 		};
@@ -477,7 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug_On_Motion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug_On_Motion";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moplug SendToMotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Moplug SendToMotion";
 			};
 			name = Release;
 		};
@@ -493,7 +500,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Moplug_On_Motion;
+				TEST_TARGET_NAME = "Moplug SendToMotion";
 			};
 			name = Debug;
 		};
@@ -509,14 +516,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Moplug_On_Motion;
+				TEST_TARGET_NAME = "Moplug SendToMotion";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_On_Motion" */ = {
+		28D476A12EDCA19A00114B54 /* Build configuration list for PBXProject "Moplug_SendToMotion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D476C92EDCA19C00114B54 /* Debug */,
@@ -525,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_Motion" */ = {
+		28D476CB2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D476CC2EDCA19C00114B54 /* Debug */,
@@ -534,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionTests" */ = {
+		28D476CE2EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D476CF2EDCA19C00114B54 /* Debug */,
@@ -543,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug_On_MotionUITests" */ = {
+		28D476D12EDCA19C00114B54 /* Build configuration list for PBXNativeTarget "Moplug SendToMotionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28D476D22EDCA19C00114B54 /* Debug */,

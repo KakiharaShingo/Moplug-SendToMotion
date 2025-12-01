@@ -1,0 +1,27 @@
+## User settings
+xcuserdata/
+
+## Derived data
+DerivedData/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Package Manager
+.build/
+
+## CocoaPods
+Pods/
+
+## OS X
+.DS_Store
+
+## Large Assets
+ファイル関連/
