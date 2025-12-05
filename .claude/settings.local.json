@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xcodebuild:*)"
+      "Bash(xcodebuild:*)",
+      "Bash(find:*)",
+      "Bash(sudo cp:*)",
+      "Bash(chmod:*)",
+      "Bash(python3:*)",
+      "Bash(./install_fcpxdest.sh:*)",
+      "Bash(plutil:*)",
+      "Bash(codesign:*)",
+      "Bash(/System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister:*)",
+      "Bash(./diagnose.sh:*)",
+      "Bash(log show:*)",
+      "Bash(xattr -l \"/Applications/Moplug SendToMotion.app\")",
+      "Bash(xattr:*)",
+      "Bash(defaults read:*)",
+      "Bash(./create_from_xsend_template.sh:*)"
     ],
     "deny": [],
     "ask": []

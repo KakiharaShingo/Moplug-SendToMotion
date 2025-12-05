@@ -28,6 +28,12 @@ class DragDropView: NSView {
         registerForDraggedTypes([.fileURL])
     }
     
+    var statusText: String = "Drag & Drop Media File Here" {
+        didSet {
+            needsDisplay = true
+        }
+    }
+
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
@@ -38,14 +44,13 @@ class DragDropView: NSView {
             path.stroke()
         }
         
-        let text = "Drag & Drop Media File Here"
         let attrs: [NSAttributedString.Key: Any] = [
             .font: NSFont.systemFont(ofSize: 18, weight: .medium),
             .foregroundColor: NSColor.labelColor
         ]
-        let size = text.size(withAttributes: attrs)
+        let size = statusText.size(withAttributes: attrs)
         let point = NSPoint(x: (bounds.width - size.width) / 2, y: (bounds.height - size.height) / 2)
-        text.draw(at: point, withAttributes: attrs)
+        statusText.draw(at: point, withAttributes: attrs)
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {

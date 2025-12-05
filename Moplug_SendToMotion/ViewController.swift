@@ -28,6 +28,9 @@ class ViewController: NSViewController {
 extension ViewController: DragDropViewDelegate {
     func didDropFile(url: URL) {
         print("Dropped file: \(url.path)")
+        if let dragDropView = view.subviews.first(where: { $0 is DragDropView }) as? DragDropView {
+            dragDropView.statusText = "Processing: \(url.lastPathComponent)\n\(url.path)"
+        }
         // TODO: Generate Motion Project and Open it
         MotionController.shared.processDroppedFile(url: url)
     }

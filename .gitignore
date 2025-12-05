@@ -1,6 +1,9 @@
 ## User settings
 xcuserdata/
 
+## Build products
+build/
+
 ## Derived data
 DerivedData/
 
@@ -25,3 +28,11 @@ Pods/
 
 ## Large Assets
 ファイル関連/
+
+## Temporary build artifacts
+*.pcm
+ModuleCache.noindex/
+
+## Temporary fcpxdest files (keep only the final version)
+*.fcpxdest
+!Moplug-SendToMotion-v2.fcpxdest
