@@ -28,31 +28,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moplug_On_Motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Moplug_On_MotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D476A62EDCA19A00114B54 /* Moplug_On_Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Moplug_On_Motion.app; path = "Moplug SendToMotion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D476B72EDCA19C00114B54 /* Moplug_On_MotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Moplug_On_MotionTests.xctest; path = "Moplug SendToMotionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D476C12EDCA19C00114B54 /* Moplug_On_MotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Moplug_On_MotionUITests.xctest; path = "Moplug SendToMotionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9670C27DD6AEF66B681436B9 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Moplug_SendToMotion/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		28D476A82EDCA19A00114B54 /* Moplug_SendToMotion */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = Moplug_SendToMotion;
 			sourceTree = "<group>";
 		};
 		28D476BA2EDCA19C00114B54 /* Moplug_SendToMotionTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = Moplug_SendToMotionTests;
 			sourceTree = "<group>";
 		};
 		28D476C42EDCA19C00114B54 /* Moplug_SendToMotionUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = Moplug_SendToMotionUITests;
 			sourceTree = "<group>";
 		};

@@ -5,7 +5,7 @@ class MotionProjectGenerator {
     static func generateProject(for mediaURL: URL, outputURL: URL) throws {
         // Single file fallback
         let asset = FCPXMLAsset(id: "1", src: mediaURL.absoluteString, start: 0.0, duration: 10.0)
-        let clip = FCPXMLClip(name: mediaURL.lastPathComponent, ref: "1", offset: 0.0, duration: 10.0, start: 0.0, text: nil, type: "video")
+        let clip = FCPXMLClip(name: mediaURL.lastPathComponent, ref: "1", offset: 0.0, duration: 10.0, start: 0.0, text: nil, type: "video", lane: 0)
         let project = FCPXMLProject(assets: [asset], clips: [clip])
         try generateProject(from: project, outputURL: outputURL)
     }
@@ -73,7 +73,16 @@ class MotionProjectGenerator {
         
         var currentId = 11000
         
-        for clip in project.clips {
+        // Sort clips by lane (descending) because in Motion XML, the First element is the Top layer.
+        // Use enumerated to maintain stable sort for items with same lane
+        let sortedClips = project.clips.enumerated().sorted { lhs, rhs in
+            if lhs.element.lane != rhs.element.lane {
+                return lhs.element.lane > rhs.element.lane
+            }
+            return lhs.offset < rhs.offset
+        }.map { $0.element }
+        
+        for clip in sortedClips {
             let groupId = currentId
             let nodeId = currentId + 1
             currentId += 2

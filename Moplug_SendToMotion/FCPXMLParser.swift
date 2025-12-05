@@ -17,6 +17,7 @@ struct FCPXMLClip {
     let start: Double // Source start time
     var text: String?
     let type: String // "video", "asset-clip", "title", "ref-clip"
+    var lane: Int = 0
 }
 
 struct FCPXMLProject {
@@ -161,6 +162,7 @@ class FCPXMLParser: NSObject, XMLParserDelegate {
             let offset = parseTime(attributeDict["offset"] ?? "0s")
             let duration = parseTime(attributeDict["duration"] ?? "0s")
             let start = parseTime(attributeDict["start"] ?? "0s")
+            let lane = Int(attributeDict["lane"] ?? "0") ?? 0
             
             // Calculate absolute timeline start time
             var absoluteOffset = offset
@@ -174,7 +176,7 @@ class FCPXMLParser: NSObject, XMLParserDelegate {
             
             // print("DEBUG: Found clip/title \(name) ref \(ref) absOffset \(absoluteOffset) type \(cleanName)")
             
-            let clip = FCPXMLClip(name: name, ref: ref, offset: absoluteOffset, duration: duration, start: start, text: nil, type: cleanName)
+            let clip = FCPXMLClip(name: name, ref: ref, offset: absoluteOffset, duration: duration, start: start, text: nil, type: cleanName, lane: lane)
             
             if isParsingResources {
                 if let mediaId = currentMediaId {
@@ -205,7 +207,8 @@ class FCPXMLParser: NSObject, XMLParserDelegate {
                                 duration: subClip.duration,
                                 start: subClip.start,
                                 text: subClip.text,
-                                type: subClip.type
+                                type: subClip.type,
+                                lane: clip.lane + subClip.lane
                             )
                             project.clips.append(newClip)
                             print("DEBUG: Expanded ref-clip \(name) -> \(subClip.name) at \(newOffset)")
