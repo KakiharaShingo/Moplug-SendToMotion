@@ -15,7 +15,22 @@
       "Bash(xattr -l \"/Applications/Moplug SendToMotion.app\")",
       "Bash(xattr:*)",
       "Bash(defaults read:*)",
-      "Bash(./create_from_xsend_template.sh:*)"
+      "Bash(./create_from_xsend_template.sh:*)",
+      "Bash(./create_fcpxml_destination.sh:*)",
+      "Bash(./complete_install_fcpxml.sh)",
+      "Bash(tee:*)",
+      "Bash(echo \"インストールスクリプトの準備ができました。以下のコマンドを実行してください：\n\n./complete_install_fcpxml.sh\n\nこのスクリプトは以下を実行します：\n1. アプリをビルド\n2. NSPrincipalClassを修正\n3. コード署名\n4. /Applicationsにインストール (sudoが必要)\n5. FCPXML用の.fcpxdestファイルを作成\n6. .fcpxdestをインストール (sudoが必要)\n7. Launch Servicesをリセット\n\n完了後、Final Cut Proを再起動してください。\")",
+      "Bash(ls:*)",
+      "Bash(./create_fcpxml_from_xsend.sh:*)",
+      "Bash(./create_simple_fcpxml_dest.sh:*)",
+      "Bash(sudo rm:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(osascript:*)",
+      "Bash(echo:*)",
+      "Bash(/tmp/test_complete_automation.sh:*)",
+      "Bash(tccutil reset:*)",
+      "Bash(BUILT_APP=\"build/Release/Moplug SendToMotion.app\")"
     ],
     "deny": [],
     "ask": []

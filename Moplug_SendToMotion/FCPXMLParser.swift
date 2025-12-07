@@ -61,8 +61,14 @@ class FCPXMLParser: NSObject, XMLParserDelegate {
     private var contextStack: [ClipContext] = []
     
     static func parse(url: URL) -> FCPXMLProject? {
+        var parseURL = url
+        var isDirectory: ObjCBool = false
+        if FileManager.default.fileExists(atPath: url.path, isDirectory: &isDirectory), isDirectory.boolValue {
+            parseURL = url.appendingPathComponent("Info.fcpxml")
+        }
+        
         let parser = FCPXMLParser()
-        if let project = parser.parseFile(url: url) {
+        if let project = parser.parseFile(url: parseURL) {
             // Calculate project start time (minimum of all clips)
             var minStart = Double.greatestFiniteMagnitude
             for clip in project.clips {

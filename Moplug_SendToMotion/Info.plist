@@ -13,12 +13,28 @@
 			<key>CFBundleTypeName</key>
 			<string>FCPXML Document</string>
 			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.finalcutpro.xml</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>fcpxmld</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>FCPXML Bundle</string>
+			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSHandlerRank</key>
 			<string>Alternate</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.apple.finalcutpro.xml</string>
+				<string>com.apple.finalcutpro.xml.bundle</string>
 			</array>
 		</dict>
 		<dict>
@@ -40,5 +56,9 @@
 	<string>MoplugApplication</string>
 	<key>OSAScriptingDefinition</key>
 	<string>OSAScriptingDefinition.sdef</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>このアプリはFinal Cut ProからXMLを自動的にエクスポートするためにAutomation権限が必要です。</string>
+	<key>NSSystemAdministrationUsageDescription</key>
+	<string>このアプリはFinal Cut ProのUIを自動操作するためにAccessibility権限が必要です。</string>
 </dict>
 </plist>
