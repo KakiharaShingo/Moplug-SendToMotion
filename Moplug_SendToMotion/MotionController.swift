@@ -1,10 +1,32 @@
 import Cocoa
 import UniformTypeIdentifiers
+import UserNotifications
 
 class MotionController {
     static let shared = MotionController()
-    
-    private init() {}
+
+    private init() {
+        // Request notification permission
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if let error = error {
+                writeDebugLog("Notification permission error: \(error)")
+            }
+        }
+    }
+
+    private func showNotification(title: String, message: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = message
+        content.sound = .default
+
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                writeDebugLog("Notification error: \(error)")
+            }
+        }
+    }
     
     func processDroppedFile(url: URL) {
         writeDebugLog("Processing dropped file: \(url.path)")
@@ -20,6 +42,9 @@ class MotionController {
 
         // If called from FCPX Share menu, automatically export XML
         writeDebugLog("Called from Share menu. Automatically exporting FCPXML...")
+
+        // Show notification to user
+        showNotification(title: "Moplug Send Motion", message: "処理中です。Final Cut Proを操作しないでください...")
 
         // Trigger automatic XML export - use downloads folder (FCPX's default)
         let downloadsURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
@@ -58,6 +83,9 @@ class MotionController {
 
         tell application "System Events"
             tell process "Final Cut Pro"
+                -- Keep Final Cut Pro in front
+                set frontmost to true
+
                 -- Select all timeline content (required for export to work)
                 keystroke "a" using command down
                 delay 0.5
@@ -72,6 +100,9 @@ class MotionController {
                 end tell
 
                 delay 2.5
+
+                -- Keep Final Cut Pro in front during dialog
+                set frontmost to true
 
                 -- Find the "XMLの書き出し" window
                 if exists window "XMLの書き出し" then
@@ -163,6 +194,16 @@ class MotionController {
         let downloadsURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
         let suggestedName = url.deletingPathExtension().lastPathComponent + ".motn"
         let outputURL = downloadsURL.appendingPathComponent(suggestedName)
+
+        // Delete existing file if it exists to avoid replace dialog
+        if FileManager.default.fileExists(atPath: outputURL.path) {
+            do {
+                try FileManager.default.removeItem(at: outputURL)
+                writeDebugLog("Deleted existing file: \(outputURL.path)")
+            } catch {
+                writeDebugLog("Failed to delete existing file: \(error)")
+            }
+        }
 
         writeDebugLog("Auto-saving Motion project to: \(outputURL.path)")
         self.generateAndOpen(inputURL: fcpxmlFile, outputURL: outputURL, isFCPXML: true)

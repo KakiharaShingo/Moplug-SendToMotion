@@ -30,7 +30,8 @@
       "Bash(echo:*)",
       "Bash(/tmp/test_complete_automation.sh:*)",
       "Bash(tccutil reset:*)",
-      "Bash(BUILT_APP=\"build/Release/Moplug SendToMotion.app\")"
+      "Bash(BUILT_APP=\"build/Release/Moplug SendToMotion.app\")",
+      "Bash(/tmp/install_moplug.sh)"
     ],
     "deny": [],
     "ask": []
